@@ -1,78 +1,118 @@
+/* 1. Mapeamento das áreas do Grid (sem ponto antes dos nomes) */
 .bag {
-  grid: bag;
+  grid-area: bag;
 }
+
 .passport {
-  grid: passport;
+  grid-area: passport;
 }
 
 .people {
-  grid: people;
+  grid-area: people;
 }
 
-.payments .image-content {
+.payment {
+  width: 100%;
+  max-width: 312px;
+  margin: 0 auto;
+}
+
+.payment .content-container {
+  display: flex;
+  flex-direction: column; /* No mobile, texto fica em cima e fotos embaixo */
+  gap: 24px;
+}
+
+.payment .image-content {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "bag passport"
     "people people";
+  object-fit: cover; 
   gap: 24px;
-
-  margin-top: 24px;
+  width: 312px;
 }
 
-.image-content .content-container {
-  display: flex;
-  justify-content: space-between;
-}
-.image-content .content-container .image.bag {
-  background-image: url('img/montagemfoto01Mobile.png') no-repeat;
-  background-size: cover;
-   width: 350px;
-  height: 550px;
-  border-radius: 8px;
-}
-.image-content .content-container .image.passport {
-  background-image: url('img/montagemfoto02Mobile.png');
-  background-size: cover;
-   width: 350px;
-  height: 550px;
-  border-radius: 8px;
-}
-.image-content .content-container .image.people {
-  background-image: url('img/montagemfoto03Mobile.png');
-  background-size: cover;
-   width: 350px;
-  height: 550px;
+/* 3. Estilo Base das Imagens (Mobile) */
+.image.bag {
+  background: url('img/montagemfoto01Mobile.png') no-repeat center/cover;
+  width: 144px;
+  height: 254px;
   border-radius: 8px;
 }
 
-.image-content .content-container .image.colspan-2 {
-  grid-column: span 2;
+.image.passport {
+  background: url('img/montagemfoto02Mobile.png') no-repeat center/cover;
+  width: 144px;
+  height: 254px;
+  border-radius: 8px;
 }
 
-.payments .content-container {
-  display: flex;
-  justify-content: space-between;
+.image.people {
+  background: url('img/montagemfoto03Mobile.png') no-repeat center/cover;
+  width: 312px;
+  height: 182px;
+  border-radius: 8px;
 }
 
-@media screen and (min-width: 768) {
+/* 4. Media Queries com unidades corretas (px) */
+@media screen and (min-width: 768px) {
+  .payment {
+    max-width: 768px;
+    padding: 0 60px;
+  }
+
+  .payment .image-content {
+    width: 450px;
+  }
+
   .image.bag {
-    background-image: url(./img/montagemfoto01Tablet.png);
-    background-size: cover;
+    background-image: url('./img/montagemfoto01Tablet.png');
+    width: 213px;
+    height: 375px;
   }
+
   .image.passport {
-    background-image: url(./img/montagemfoto02Tablet.png);
-    background-size: cover;
+    background-image: url('./img/montagemfoto02Tablet.png');
+    width: 213px;
+    height: 375px;
   }
+
   .image.people {
-    background-image: url(./img/montagemfoto03Tablet.png);
-    background-size: cover;
+    background-image: url('./img/montagemfoto03Tablet.png');
+    width: 450px;
+    height: 250px;
   }
 }
+
 @media screen and (min-width: 1440px) {
-  .payments .text-content {
-    width: 360px;
+  .payment {
+    max-width: 1440px;
+    padding: 0 120px;
   }
-  .payments .image-gallery {
-    width: 790px;
+
+  /* Coloca o Bloco de Texto e a Galeria lado a lado */
+  .payment .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
   }
+
+  .payment .text-content {
+   grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas perfeitas */
+    max-width: 1200px;                    /* Limita a largura para não esticar infinito */
+    margin: 0 auto;                       /* Centraliza a galeria na tela */
+    gap: 24px;    
+  }
+  
+  .image{
+    height:400px
+  }
+
+  .image .people{
+    550px
+  }
+  
 }

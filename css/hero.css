@@ -1,6 +1,6 @@
 .hero-img {
   height: 400px;
   width: 100%;
-  background-image: url(./img/banner-homepage.png) no-repeat;
+  background-image: url("banner-homepage.png") no-repeat;
   background-size: cover;
 }

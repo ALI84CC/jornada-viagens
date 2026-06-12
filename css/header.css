@@ -115,3 +115,12 @@ nav {
     padding: 38px 160px;
   }
 }
+
+.hero .hero-img {
+  font-size: 48px;
+  background-image: url("./img/banner-homepage.png");
+  background-size: cover;
+  background-clip: text;
+  background-size: 100% 100%;
+  color: transparent;
+}

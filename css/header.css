@@ -3,7 +3,7 @@ header {
   height: 138px;
   background-color: var(--background-tertiary-color);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 38px 48px;
@@ -15,22 +15,24 @@ header {
   display: inline-block;
   width: 68px;
   height: 64px;
-  top: 0px;
-  margin: 37px 0 0 48px;
+  margin: 37px 0 40px 48px;
 }
 
-.logo-mobile {
+.img-mobile {
   display: block;
 }
 
-.logo-desktop {
+.img-desktop {
   display: none;
 }
 
 .navigation-menu {
   margin-top: 50px;
   margin-right: 70px;
+  padding: 10px 50px;
+  justify-content: space-between;
 }
+
 input[type="checkbox"]:checked ~ nav {
   display: block;
   position: absolute;
@@ -49,7 +51,10 @@ nav {
 }
 
 .list-links li {
+  display: flex;
+  padding: 0;
   margin: 16px 0;
+  gap: 20px;
 }
 
 .list-links li a {
@@ -57,12 +62,14 @@ nav {
   text-decoration: none;
   font-weight: var(--menu-tex-t-weight);
   font-size: 24px;
+  margin-right: 25px;
 }
 
 @media screen and (min-width: 668px) {
   .navigation-menu {
     margin-top: 0;
     width: 467px;
+    padding: inherit;
   }
   .navigation-menu label {
     display: none;
@@ -93,11 +100,11 @@ nav {
     height: 64px;
     right: 120px;
   }
-  .logo-mobile {
+  .img-mobile {
     display: none;
   }
 
-  .logo-desktop {
+  .img-desktop {
     display: block;
   }
 
@@ -108,6 +115,6 @@ nav {
 
 @media screen and (min-width: 1920px) {
   header {
-    padding: 38px 160px;
+    padding: 38px 120px;
   }
 }

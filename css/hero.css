@@ -1,6 +1,29 @@
 .hero-img {
   height: 400px;
   width: 100%;
-  background-image: url("banner-homepage.png") no-repeat;
+  background-image: url("../css/img/banner-homepage.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+@media screen and (min-width: 668px) {
+  .hero-img {
+    height: 620px;
+    background-image: url("../css/img/banner-homepage-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    height: 620px;
+    background-image: url("../css/img/banner-homepage-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+

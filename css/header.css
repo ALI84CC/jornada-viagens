@@ -30,7 +30,9 @@ header {
   margin-top: 50px;
   margin-right: 70px;
   padding: 10px 50px;
+  justify-content: space-between;
 }
+
 input[type="checkbox"]:checked ~ nav {
   display: block;
   position: absolute;
@@ -49,7 +51,10 @@ nav {
 }
 
 .list-links li {
+  display: flex;
+  padding: 0;
   margin: 16px 0;
+  gap: 20px;
 }
 
 .list-links li a {
@@ -57,12 +62,14 @@ nav {
   text-decoration: none;
   font-weight: var(--menu-tex-t-weight);
   font-size: 24px;
+  margin-right: 25px;
 }
 
 @media screen and (min-width: 668px) {
   .navigation-menu {
     margin-top: 0;
     width: 467px;
+    padding: inherit;
   }
   .navigation-menu label {
     display: none;

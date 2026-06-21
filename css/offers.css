@@ -1,10 +1,15 @@
+.offers-cards{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .card{
     color: var(---text-secondary-color);
     background-color:black;
     width:312px;
-    height:288px;
+    height:280x;
     box-sizing: border-box; 
-    padding:16px 24px;
+    padding:20px 30px;
     border-radius:16px;
     text-align: center;
 
@@ -14,7 +19,9 @@
     display: block;
     background-color: transparent;
     position: static;
-}
+    padding: 0;
+    margin-bottom: 24px;    
+} 
 
 .card header p{
     font-size: 20px;
@@ -23,14 +30,16 @@
 
 
 .card header h3{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: var(--title-weight);
-    margin-top:8px 0;
+    margin-top:8px 18px;
 }
 
 
 .card header span{
     font-size: 32px;
-    margin-top:24px; 
+    margin-top:30px; 
+    
     display:inline-blopck;
 }
+

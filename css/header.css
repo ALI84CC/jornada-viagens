@@ -17,19 +17,19 @@ header {
 
 .img-mobile {
   display: block;
-  height:50px;
-  width:auto;
+  height: 50px;
+  width: auto;
 }
 
 .img-desktop {
   display: none;
-  height:50px;
-  width:auto;
+  height: 50px;
+  width: auto;
 }
 
 .navigation-menu {
-display:flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -37,13 +37,13 @@ input[type="checkbox"]:checked ~ nav {
   position: absolute;
 }
 
-.menu-toggle{
-  display:none;
+.menu-toggle {
+  display: none;
 }
 
 nav {
   display: none;
-  position:absolute;
+  position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
@@ -51,14 +51,14 @@ nav {
   z-index: 10;
 }
 
-input[type="checkbox"]:checked ~ nav{
-  display:block;
+input[type="checkbox"]:checked ~ nav {
+  display: block;
 }
 
 .list-links {
   list-style: none;
-  padding:20px;
-  margin:0;
+  padding: 20px;
+  margin: 0;
 }
 
 .list-links li {
@@ -73,8 +73,9 @@ input[type="checkbox"]:checked ~ nav{
 }
 
 @media screen and (min-width: 668px) {
-  header{
+  header {
     padding: 24px 48px;
+    align-items: center;
   }
 
   .navigation-menu label {
@@ -82,20 +83,21 @@ input[type="checkbox"]:checked ~ nav{
   }
 
   .navigation-menu nav {
-    display: block;
-    position:static;
-    flex-direction:row;
-    padding:0
+    display: block !important;
+    position: static;
+    width: auto;
+    background-color: transparent;
   }
 
- .navigation-menu .list-links{
-  display:flex;
-  flex-direction: row;
-  gap:32px;
-  padding:0;
- }
+  .navigation-menu .list-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
 
- .navigation-menu .list-links li {
+  .navigation-menu .list-links li {
     margin: 0;
   }
 }
@@ -104,7 +106,7 @@ input[type="checkbox"]:checked ~ nav{
   header {
     padding: 30px 120px;
   }
-  
+
   .img-mobile {
     display: none;
   }

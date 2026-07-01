@@ -75,7 +75,7 @@
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 824px) {
   .offers-cards {
     flex-direction: row;
     flex-wrap: wrap;

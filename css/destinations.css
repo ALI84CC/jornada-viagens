@@ -1,17 +1,12 @@
-.destination .item header {
-  display: block;
-  background-color: transparent;
-  position: static;
-  padding: 0;
-  margin-bottom: 24px;
+.destination {
+  width: 320px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
 }
-
-.destination-items .item-tokio .img-destination {
-  background-image:url('./css/img/Tokyo-mobile.jpg') no-repeat center;
-  background-size: cover;
-}
-
-.destination .item header h4 {
-  font-size: 20px;
-  font-weight: var(--title-weight);
+.destination .section-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }

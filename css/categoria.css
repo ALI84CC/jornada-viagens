@@ -15,17 +15,16 @@ section .category {
 
 .category div.icone{
     display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+    padding: 0 24px;
+    flex-direction: column;
+    gap: 24px;
 
-.category .card {
-  width: 312px;
-  height: 220px;
-  background-color: var(--background-secondary-color);
-  text-align: center;
-  border-radius: 16px;
-  padding: 24px;
+}
+.card-item{
+  color: var(---text-secondary-color);
+  background-color: transparent;
+  weight:312px;
+  height: 180px;
   box-sizing: border-box;
   text-decoration: none;
   color: var(--text-primary-color);

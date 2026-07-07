@@ -1,5 +1,12 @@
 .destination {
-  display: flex;
+<<<<<<< HEAD
+  width: 312px;
+  margin: 0 auto;
+ 
+}
+
+.destination-items{
+  display:flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
@@ -57,3 +64,33 @@
     height: 450px;
   }
 }
+=======
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.destination div.destination-items .img-destination-tokio{
+    background:
+     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+     background-size: cover;
+}
+.destination div.destination-items article.item-tokio{
+    padding: 20px;
+    line-height: 25px;
+}
+.destination-items .item-tokio .img-destination {
+  background-image:url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+.destination .item header h4 {
+  font-size: 20px;
+  font-weight: var(--title-weight);
+}
+>>>>>>> 239e115 (modificacao para adequar o layout)
+

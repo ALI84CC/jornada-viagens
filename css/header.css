@@ -5,14 +5,17 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 24px;
+  align-items: flex-start;
+  padding: 38px 48px;
   position: relative;
   gap: 15px;
 }
 
 .logo {
   display: inline-block;
+  width: 68px;
+  height:64px;
+  margin: 37px 0 0 48px;
 }
 
 .img-mobile {
@@ -28,9 +31,19 @@ header {
 }
 
 .navigation-menu {
+  margin-top: 0;
+  width: 467px;
   display: flex;
   align-items: center;
 }
+
+.navigation-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
@@ -63,6 +76,7 @@ input[type="checkbox"]:checked ~ nav {
 
 .list-links li {
   margin: 16px 0;
+
 }
 
 .list-links li a {
@@ -72,7 +86,7 @@ input[type="checkbox"]:checked ~ nav {
   font-size: 24px;
 }
 
-@media screen and (min-width: 668px) {
+@media screen and (min-width: 768px) {
   header {
     padding: 24px 48px;
     align-items: center;

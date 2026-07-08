@@ -3,7 +3,7 @@ section .category {
 }
 .category .section-title {
   width: 312px;
-  margin: 0 auto;
+  margin-bottom: 80px;
 }
 .category {
   display: flex;
@@ -13,13 +13,18 @@ section .category {
   margin-top: 64px;
 }
 
-.category .card {
-  width: 312px;
-  height: 220px;
-  background-color: var(--background-secondary-color);
-  text-align: center;
-  border-radius: 16px;
-  padding: 24px;
+.category div.icone{
+    display: flex;
+    padding: 0 24px;
+    flex-direction: column;
+    gap: 24px;
+    background-color:var(--background-secondary-color);
+}
+.card-item{
+  color: var(---text-secondary-color);
+  background-color: transparent;
+  weight:312px;
+  height: 180px;
   box-sizing: border-box;
   text-decoration: none;
   color: var(--text-primary-color);

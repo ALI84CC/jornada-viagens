@@ -18,7 +18,7 @@ section .category {
     padding: 0 24px;
     flex-direction: column;
     gap: 24px;
-
+    background-color:var(--background-secondary-color);
 }
 .card-item{
   color: var(---text-secondary-color);

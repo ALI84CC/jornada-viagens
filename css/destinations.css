@@ -1,12 +1,28 @@
 .destination {
-  width: 320px;
-  height: 64px;
   display: flex;
   flex-direction: column;
-  line-height: 24px;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0 auto;
 }
-.destination .section-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+
+.destination div.destination-items .img-destination-tokio{
+    background:
+     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+     background-size: cover;
+}
+.destination div.destination-items article.item-tokio{
+    padding: 20px;
+    line-height: 25px;
+}
+.destination-items .item-tokio .img-destination {
+  background-image:url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+.destination .item header h4 {
+  font-size: 20px;
+  font-weight: var(--title-weight);
 }

@@ -6,17 +6,17 @@
   margin-top: 64px;
 }
 
-.category div.icone{
-    display: flex;
-    padding: 0 24px;
-    flex-direction: column;
-    gap: 24px;
-    background-color:var(--background-secondary-color);
+.category div.icone {
+  display: flex;
+  padding: 0 24px;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--background-secondary-color);
 }
-.card-item{
+.card-item {
   color: var(---text-secondary-color);
   background-color: transparent;
-  weight:312px;
+  width: 312px;
   height: 180px;
   box-sizing: border-box;
   text-decoration: none;
@@ -49,6 +49,13 @@
 @media screen and (min-width: 1024px) {
   .category .card {
     width: 430px;
+  }
+  .category div.icone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 60px;
   }
 }
 

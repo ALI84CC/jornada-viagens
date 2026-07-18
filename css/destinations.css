@@ -85,14 +85,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: transparent;
   margin: 0 auto;
 }
 
-.destination div.destination-items .img-destination-tokio {
+.destination .destination-items .item-tokio {
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./css/img/Tokyo-mobile.jpg") no-repeat center;
+    url("./img/tokyo-mobile.jpg") no-repeat;
   background-size: cover;
 }
 .destination div.destination-items article.item-tokio {
@@ -104,48 +103,41 @@
   background-size: cover;
 }
 
-.destination .item header h4 {
-  font-size: 20px;
-  font-weight: var(--title-weight);
-}
->>>>>>> 239e115 (modificacao para adequar o layout)
-
 .destination .item p {
-  font-size: 20px;
-  font-weight: var(--text-weight);
-  line-height: 32px;
   margin-bottom: 24px;
 }
 
 .destination .button {
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
-  .destination {
-    width: 648px;
+@media screen and (min-width:768px){
+  .destination{
+    width:648px
   }
-  .destination .item .img-item {
-    width: 100%;
-    height: 452px;
+  .destination .item .img-item{
+    width:100%;
+    height:452px;
   }
   .destination .item.tokyo .img-item {
-    background: url("./css/img/tokyo-tablet-desk.jpg") no-repeat cover;
+    background: url(./css/img/tokyo-tablet-desk.jpg) no-repeat cover;
   }
-  .destination .item.osaka .img-item {
-    background: url(./css/img/osaka-tablet-desk.jpg) no-repeat cover;
+   .destination .item.osaka .img-item{
+    background: url(./css/img/osaka-tablet-desk.jpg);
+    background-cover: cover;
   }
-  .destination .button {
+  .destination .button{
     width: 280px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .destination {
-    width: 900px;
+@media screen and (min-width: 1024px){
+  .destination{
+    width: 900px
   }
 
-  .desntination .item .img-item {
-    width: 100%;
+  .desntination .item .img-item{
+    width:100%;
     height: 450px;
   }
 }

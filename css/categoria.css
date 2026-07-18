@@ -23,11 +23,6 @@
   color: var(--text-primary-color);
 }
 
-.category .section-title p {
-  font-size: 28px;
-  font-weight: var(--title-weight);
-}
-
 .category .card .single-line {
   padding-top: 50px;
 }
@@ -55,7 +50,7 @@
     flex-direction: row;
     align-items: center;
     width: 90%;
-    padding: 60px;
+    padding: 60px 50px;
   }
 }
 

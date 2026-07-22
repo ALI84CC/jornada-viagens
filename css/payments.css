@@ -1,5 +1,33 @@
-.image-content{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    
+.image {
+  width: 312px;
+  height: 460px;
+}
+.image-content {
+  padding-top: 24px;
+}
+.image.bag {
+  background-image: url(./img/montagemfoto01Mobile.png);
+  grid-area: foto1;
+  width: 144px;
+  height: 254px;
+}
+.image.passport {
+  background-image: url(./img/montagemfoto02Mobile.png);
+  grid-area: foto2;
+  width: 144px;
+  height: 254px;
+}
+.image.people {
+  background-image: url(./img/montagemfoto03Mobile.png);
+  grid-area: foto3;
+  width: 312px;
+  height: 182px;
+}
+.image-content {
+  display: grid;
+  grid-template-areas:
+    "foto1  foto2"
+    "foto3 foto3";
+  column-gap: 24px;
+  row-gap: 24px;
 }

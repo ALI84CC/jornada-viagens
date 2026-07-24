@@ -1,73 +1,61 @@
 .image-content {
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  grid-template-areas:
-    "foto1  foto2"
-    "foto3 foto3";
+
   gap:24px;
-  width: 312px;
   height: 460px;
-  padding-top: 24px;
+  width:100%;
+  margin-top: 24px;
 }
 
-.image.bag {
-  background-image: url(./img/montagemfoto01Mobile.png);
+.image-content  .content-container{
+  display:flex;
+  justify-content:space-between;
+}
+.image-content .content-container  .image.bag {
+  background-image: url(./css/img/montagemfoto01Mobile.png);
   background-size: cover;
-  background-position: center;
-  grid-area: foto1;
-  width: 144px;
-  height: 254px;
 }
-.image.passport {
+.image-content .content-container  .image.passport {
   background-image: url(./img/montagemfoto02Mobile.png);
-   background-size: cover;
-  background-position: center;
-  grid-area: foto2;
-  width: 144px;
-  height: 254px;
+   background-size: cover
 }
-.image.people {
+.image-content  .content-container .image.people {
   background-image: url(./img/montagemfoto03Mobile.png);
-  grid-area: foto3;
-  width: 312px;
-  height: 182px;
+  background-size: cover;
+
 }
 
+.image-content .content-container .image.colspan-2{
+  grid-column: span 2;
+}
 //Media query para telas 768px
 
 @media screen and  (min-width: 768px) {
-  .image-content {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 648px;  
-    height: 460px ; 
-    gap: 24px;
-    align-items: center;
-  }
+ .image-content .content-container .image.bag  {
+  background-image: url(./img/montagemfoto01Tablet.png);
+  background-size: cover;
 
-  .image.bag {
-    background-image: url(./img/montagemfoto01Tablet.png);
-    width: 312px;  
-    height: 254px; 
-  }
 
-  .image.passport {
-    background-image: url(./img/montagemfoto01Tablet.png);
-    width: 312px;
-    height: 254px;
-  }
+}
+.image-content .content-container .image.passport {
+  background-image: url(./img/montagemfoto02Tablet.png);
+   background-size: cover;
 
-  .image.people {
-    background-image: url(./img/montagemfoto03Tablet.png);
-    width: 648px;
-    height: 182px;
-  }
+}
+.image-content .content-container .image.people {
+  background-image: url(./img/montagemfoto03Tablet.png) no-repeat;
+  background-size: cover;
+
 }
 
-@media screen and (min-width: 1024px) {
-  .image-content {
-    width: 580px;  
-    height: 800px;
-    gap: 32px;   
+}
+
+@media screen and (min-width: 1440px) {
+ .image-content .content-container .text-content{
+  width:360px;
+ }
+ .image-content .content-container .image-content {
+    width: 790px;  
   }
 }

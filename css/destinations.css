@@ -125,7 +125,7 @@
   }
    .destination .item.osaka .img-item{
     background: url(./css/img/osaka-tablet-desk.jpg);
-    background-cover: cover;
+    background-size: cover;
   }
   .destination .button{
     width: 280px;

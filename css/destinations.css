@@ -1,5 +1,19 @@
 .destination {
-  display: flex;
+<<<<<<< HEAD
+  width: 312px;
+  margin: 0 auto;
+ 
+}
+
+.destination-items{
+<<<<<<< HEAD
+  width: 312px;
+  margin: 0 auto;
+ 
+}
+
+.destination-items{
+  display:flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
@@ -20,7 +34,24 @@
   background-size: cover;
 }
 
+.destinations .item header h4{
+  font-size:28px;
+  font-weight: var(--title-weight);
+  margin: 24px 0;
+}
+
+.destination .section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+>>>>>>> 239e115 (modificacao para adequar o layout)
+
 .destination .item p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
   margin-bottom: 24px;
 }
 
@@ -56,4 +87,149 @@
     width: 100%;
     height: 450px;
   }
+}
+=======
+  display:flex;
+  flex-direction: column;
+  align-item: center;
+  gap:24px;
+}
+
+.destination .item .img-item{
+  width:100%;
+  height:368px;
+}
+
+.destination-items .item.tokyo .img-item{
+  background: url( ../img/tokyo-mobile.jpg);
+  background-size: cover;
+.destination div.destination-items .img-destination-tokio{
+    background:
+     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+     background-size: cover;
+}
+
+.destination-items .item.osaka .img-item{
+  background: url(../img/osaka-mobile.jpg);
+.destination div.destination-items article.item-tokio{
+    padding: 20px;
+    line-height: 25px;
+}
+.destination-items .item-tokio .img-destination {
+  background-image:url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+.destinations .item header h4{
+  font-size:28px;
+  font-weight: var(--title-weight);
+  margin: 24px 0;
+}
+
+.destination .section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.destination .item p{
+.destination .item p{
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.destination .button{
+  width:100%;
+  text-aling: center;
+.destination .button{
+  width:100%;
+  text-aling: center;
+}
+@media screen and (min-width:768px){
+  .destination{
+    width:648px
+@media screen and (min-width:768px){
+  .destination{
+    width:648px
+  }
+  .destination .item .img-item{
+    width:100%;
+    height:452px;
+  .destination .item .img-item{
+    width:100%;
+    height:452px;
+  }
+    .destination .item.tokyo .img-item{
+    background: url('./css/img/tokyo-tablet-desk.jpg');
+    background-cover: cover;
+    .destination .item.tokyo .img-item{
+    background: url('./css/img/tokyo-tablet-desk.jpg');
+    background-cover: cover;
+  }
+   .destination .item.osaka .img-item{
+    background: url(./css/img/osaka-tablet-desk.jpg);
+    background-cover: cover;
+   .destination .item.osaka .img-item{
+    background: url(./css/img/osaka-tablet-desk.jpg);
+    background-cover: cover;
+  }
+  .destination .button{
+  .destination .button{
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .destination{
+    width: 900px
+@media screen and (min-width: 1024px){
+  .destination{
+    width: 900px
+  }
+
+  .desntination .item .img-item{
+    width:100%;
+  .desntination .item .img-item{
+    width:100%;
+    height: 450px;
+  }
+
+
+}
+=======
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.destination div.destination-items .img-destination-tokio{
+    background:
+     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+     background-size: cover;
+}
+.destination div.destination-items article.item-tokio{
+    padding: 20px;
+    line-height: 25px;
+}
+.destination-items .item-tokio .img-destination {
+  background-image:url('./css/img/Tokyo-mobile.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+.destination .item header h4 {
+  font-size: 20px;
+  font-weight: var(--title-weight);
+}
+>>>>>>> 239e115 (modificacao para adequar o layout)
+
+
+
 }

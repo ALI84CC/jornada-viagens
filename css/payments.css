@@ -19,23 +19,68 @@
   margin-top: 24px;
 }
 
-.image {
-  width: 312px;
-  height: 460px;
-}
 .image-content {
-  padding-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+  gap:24px;
+  height: 460px;
+  width:100%;
+  margin-top: 24px;
 }
-.image.bag {
-  background-image: url(./img/montagemfoto01Mobile.png);
+
+.image-content  .content-container{
+  display:flex;
+  justify-content:space-between;
+}
+.image-content .content-container  .image.bag {
+  background-image: url(./css/img/montagemfoto01Mobile.png);
   background-size: cover;
 }
-.image.passport {
+.image-content .content-container  .image.passport {
   background-image: url(./img/montagemfoto02Mobile.png);
+   background-size: cover
   background-size: cover;
 }
-.image.people {
+.image-content  .content-container .image.people {
   background-image: url(./img/montagemfoto03Mobile.png);
+  background-size: cover;
+
+}
+
+.image-content .content-container .image.colspan-2{
+  grid-column: span 2;
+}
+//Media query para telas 768px
+
+@media screen and  (min-width: 768px) {
+ .image-content .content-container .image.bag  {
+  background-image: url(./img/montagemfoto01Tablet.png);
+  background-size: cover;
+
+
+}
+.image-content .content-container .image.passport {
+  background-image: url(./img/montagemfoto02Tablet.png);
+   background-size: cover;
+
+}
+.image-content .content-container .image.people {
+  background-image: url(./img/montagemfoto03Tablet.png) no-repeat;
+  background-size: cover;
+
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+ .image-content .content-container .text-content{
+  width:360px;
+ }
+ .image-content .content-container .image-content {
+    width: 790px;  
+  }
+}
   background-size: cover;
 }
 

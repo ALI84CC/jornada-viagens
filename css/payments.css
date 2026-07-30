@@ -24,16 +24,25 @@
   justify-content: space-between;
 }
 .image-content .content-container .image.bag {
-  background-image: url(./css/img/montagemfoto01Mobile.png);
+  background-image: url('img/montagemfoto01Mobile.png') no-repeat;
   background-size: cover;
+   width: 350px;
+  height: 550px;
+  border-radius: 8px;
 }
 .image-content .content-container .image.passport {
-  background-image: url(./img/montagemfoto02Mobile.png);
+  background-image: url('img/montagemfoto02Mobile.png');
   background-size: cover;
+   width: 350px;
+  height: 550px;
+  border-radius: 8px;
 }
 .image-content .content-container .image.people {
-  background-image: url(./img/montagemfoto03Mobile.png);
+  background-image: url('img/montagemfoto03Mobile.png');
   background-size: cover;
+   width: 350px;
+  height: 550px;
+  border-radius: 8px;
 }
 
 .image-content .content-container .image.colspan-2 {

@@ -1,124 +1,123 @@
+/* Container Geral */
 .destination {
-  width: 312px;
+  width: 100%;
+  max-width: 312px;
   margin: 0 auto;
 }
 
 .destination-items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-    width: 312px;
-  margin: 0 auto;
+  gap: 40px;
 }
 
-.destination .item-tokyo{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  width:100%;
-  margin-bottom:40px;
-}
-
-.destination .item-tokyo .content-text{
-  max-width:280px;
-  margin: 16px auto;
-}
-
-.destination .item-tokyo .img-destination-tokyo {
-  background: url('img/tokyo-mobile.jpg') no-repeat;
-  background-size: cover; 
-  background-position: center;
-  width: 350px;
-  height: 550px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-
-.destination .item-osaka{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  width:100%;
-  margin-bottom:40px;
-}
-
-.destination .item-osaka .content-text{
-  max-width:280px;
-  margin: 16px auto;
-}
-
-.destination-items .item-osaka .img-destination-osaka {
-  background: url("img/osaka-mobile.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 350px;
-  height: 550px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-
-}
-
-
-.destinations .item header h4 {
-  font-size: 28px;
-  font-weight: var(--title-weight);
-  margin: 24px 0;
-}
-
-.destination .section-item {
+/* Estilo do Card (Tokyo e Osaka) */
+.item-tokyo,
+.item-osaka {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
+/* Imagens */
+.img-destination-tokyo {
+  background: url('img/tokyo-mobile.jpg') no-repeat center/cover;
+  width: 100%;
+  height: 360px;
+  border-radius: 8px;
+}
 
-.destination .item p {
+.img-destination-osaka {
+  background: url("img/osaka-mobile.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 360px;
+  border-radius: 8px;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.content-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary-color, #222);
+  margin: 24px 0 16px 0;
+}
+
+.content-text {
   font-size: 20px;
-  font-weight: var(--text-weight);
   line-height: 32px;
+  color: var(--text-primary-color, #444);
   margin-bottom: 24px;
 }
 
+/* Aproveita o .button global sem sobrecarregar com CSS extra */
 .destination .button {
-  width: 100%;
-  text-align: center;
   margin-bottom: 20px;
 }
 
-
+/* ==========================================
+   MEDIA QUERIES (Tablet e Desktop)
+   ========================================== */
 @media screen and (min-width: 768px) {
   .destination {
-    width: 648px;
-  }
-  .destination .item .img-item {
-    width: 100%;
-    height: 452px;
-  }
-  .destination .item-tokyo .img-destination-tokyo{
-    background: url("img/tokyo-tablet-desk.jpg") no-repeat ;
-    background-size:cover;
-    width:450px;
-    hight:750px;
-  }
-  .destination .item-osaka .img-destination-osaka {
-    background: url("img/osaka-tablet-desk.jpg") no-repeat ;
-    background-size:cover;
-    width:450px;
-    hight:750px;
-  }
-  .destination .button {
-    width: 280px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .destination {
-    width: 900px;
+    max-width: 768px;
+    padding: 0 60px; /* Cria as margens de respiro do Figma! */
   }
 
-  .desntination .item .img-item {
-    width: 100%;
+  .content-wrapper {
+    padding: 0; /* Remove padding duplo já que a section tem padding */
+  }
+
+  /* Reduz as imagens proporcionalmente ao container de 648px (768 - 120 de margens) */
+  .img-destination-tokyo {
+    background-image: url('img/tokyo-tablet-desk.jpg');
+    height: 380px; /* Reduzido levemente para harmonizar no tablet */
+  }
+
+  .img-destination-osaka {
+    background-image: url('img/osaka-tablet-desk.jpg');
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destination {
+    max-width: 1024px;
+    padding: 0 120px; /* Respiro de desktop */
+  }
+
+  .img-destination-tokyo,
+  .img-destination-osaka {
     height: 450px;
   }
 }
 
+@media screen and (min-width:1440px){
+  .destination{
+    max-width:1440px;
+    padding: 0 120px;
+    margin-bottom: 80px;
+    }
+
+    .destination-items{
+      flex-direction:row;
+      flex-wrap:wrap;
+      gap:24px;
+    }
+
+    .item-tokyo,
+    .item-osaka {
+      width: calc(50% - 12px); /* 50% de largura menos a metade do gap de 24px */
+      margin-bottom: 0;
+    }
+
+    .img-destination-tokyo,
+    .img-destination-osaka {
+      height: 400px;
+    }
+}

@@ -65,6 +65,7 @@
   }
 
   .payment .image-content {
+    justify-content: center;
     width: 450px;
   }
 
@@ -115,4 +116,20 @@
   .image .people {
     width: 550px;
   }
+
+  .payment .text-content {
+   grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas perfeitas */
+    max-width: 1200px;                    /* Limita a largura para não esticar infinito */
+    margin: 0 auto;                       /* Centraliza a galeria na tela */
+    gap: 24px;    
+  }
+  
+  .image{
+    height:400px
+  }
+
+  .image .people{
+    550px
+  }
+  
 }

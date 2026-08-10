@@ -1,3 +1,6 @@
+.section-title{
+  padding-top:40px;
+}
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -60,4 +63,22 @@
     height: 86px;
      border-radius: 50%; 
      object-fit: cover;  
+}
+
+@media screen and (min-width: 768px) {
+.payment{
+  width:768px;
+  height:605px;
+}
+
+.testimonials div.testimonials-container article header p {
+ width:312px;
+ font-size: 648px;
+ line-height: 42px;
+}
+
+}
+@media screen and (min-width: 1440px) {
+
+  
 }

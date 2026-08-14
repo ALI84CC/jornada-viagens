@@ -1,17 +1,17 @@
-.section-title{
-  padding-top:40px;
+.section-title {
+  padding-top: 40px;
 }
 .testimonials {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
-.testimonials div.testimonials-container{
-  gap:32px
+.testimonials div.testimonials-container {
+  gap: 32px;
 }
 
-.testimonials div.testimonials-container article{
+.testimonials div.testimonials-container article {
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -21,118 +21,116 @@
 }
 
 .testimonials div.testimonials-container article header p {
- width:312px;
- height:auto;
- font-size: 16px;
- line-height: 30px;
+  width: 312px;
+  height: auto;
+  font-size: 16px;
+  line-height: 30px;
 }
 
-.testimonials article footer{
+.testimonials article footer {
   display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    padding-top: 20px;
-    width: 100%;
-    height: auto;
-    gap: 24px;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-top: 20px;
+  height: auto;
+  width: 100%;
+  margin-top: 8px;
+  gap: 24px;
 }
 
-.testimonials article footer div.profile-content h4{
-     font-size: 20px;
-    width: auto;
-    margin-left: auto;
+.testimonials article footer div.profile-content h4 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: var(--title-weight);
+  width: auto;
+  margin: 0 0 8px;
 }
 
-.testimonials article footer div.profile-content div.rating{
-  display: flex;       /* Alinha as estrelas em linha perfeitamente */
-  gap: 4px; 
-
+.testimonials article footer div.profile-content div.rating {
+  display: flex; /* Alinha as estrelas em linha perfeitamente */
+  gap: 4px;
 }
 
-.testimonials article footer div.profile-content div.rating span.star{
-  font-size: 32px;     /* Aumente ou diminua aqui para chegar no tamanho do Figma */
-  color: #E11D48;      /* Use a cor vermelha exata do seu root (--secondary-color ou similar) */
-  line-height: 1; 
+.testimonials article footer div.profile-content div.rating span.star {
+  font-size: 32px; /* Aumente ou diminua aqui para chegar no tamanho do Figma */
+  color: #e11d48; /* Use a cor vermelha exata do seu root (--secondary-color ou similar) */
+  line-height: 32px;
 }
 
-
-.testimonials .testimonials-container article footer img.img-testiomonials{
-    width: 86px;
-    height: 86px;
-     border-radius: 50%; 
-     object-fit: cover;  
+.testimonials .testimonials-container article footer img.img-testiomonials {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
- section.testimonials{
+  section.testimonials {
     flex-direction: column;
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
     padding: 40px 12px;
-}   
+  }
 
-.section-title {
+  .section-title {
     text-align: center;
     margin-bottom: 48px;
     font-size: 32px;
-}
-  
-.testimonials div.testimonials-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-}
-
-.testimonials div.testimonials-container article{
-  gap:16px;
-  margin:0;
-}
-
-.testimonials div.testimonials-container article header{
-  order:2;
-  justify-content:center;
-}
-.testimonials div.testimonials-container article header p {
-  width: 100%;
-    max-width: 520px;        
-    font-size: 16px;        
-    line-height: 26px;       
-    text-align: flex-start;
-    margin-left:0;
-}
-.testimonials article footer {
-   max-width: 520px;        
-    font-size: 16px;        
-    line-height: 26px;       
-    text-align: flex-start;
-    margin:0;
-}
-
- .testimonials .testimonials-container article footer img.img-testiomonials {
-  width:64px;
-  height:64px;
-  border-radius: 50%;
-  gap:4px;
- }
-
-}
-@media screen and (min-width: 1440px) {
-
-   section.testimonials {
-    display:flex;
-    flex-direction:columm;
-    width:100%;
-    min-width:1440px;
-    gap:32px;
-    margin: 20px;
-
   }
 
-  .section-title{
-    margin-bottom:10px
+  .testimonials div.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .testimonials div.testimonials-container article {
+    gap: 16px;
+    margin: 0;
+  }
+
+  .testimonials div.testimonials-container article header {
+    order: 2;
+    justify-content: center;
+  }
+  .testimonials div.testimonials-container article header p {
+    width: 100%;
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: flex-start;
+    margin-left: 0;
+  }
+  .testimonials article footer {
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: flex-start;
+    margin: 0;
+  }
+
+  .testimonials .testimonials-container article footer img.img-testiomonials {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    gap: 4px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section.testimonials {
+    display: flex;
+    flex-direction: columm;
+    width: 100%;
+    min-width: 1440px;
+    gap: 32px;
+    margin: 20px;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
   }
 
   .testimonials div.testimonials-container {
@@ -141,58 +139,53 @@
     justify-content: center;
     align-items: flex-end;
     width: 1189px;
-}
+  }
 
-.testimonials div.testimonials-container article {
+  .testimonials div.testimonials-container article {
+    width: 360px;
+  }
+  .testimonials div.testimonials-container article header {
+    width: 360px;
+    order: 1;
+    box-sizing: content-box;
+  }
 
-  width:360px;
-  
-
-}
-.testimonials div.testimonials-container article header {
-   width: 360px;
-  order: 1;
-  box-sizing: content-box;
-
-}
-
-.testimonials div.testimonials-container article header p {
-    width:286px;
+  .testimonials div.testimonials-container article header p {
+    width: 286px;
     font-size: 28px;
     line-height: 42px;
-    width:50%;
-
-}
+    width: 50%;
+  }
 
   .testimonials article footer {
-    order: 1;                  /* Move o bloco do perfil para o topo */
+    order: 1; /* Move o bloco do perfil para o topo */
     display: flex;
-    flex-direction: row;       /* Mantém foto ao lado do texto/estrelas */
+    flex-direction: row; /* Mantém foto ao lado do texto/estrelas */
     align-items: center;
-    justify-content: center;   /* Centraliza o conjunto na tela */
+    justify-content: center; /* Centraliza o conjunto na tela */
     width: auto;
     height: auto;
     padding-top: 0;
-    gap: 16px;                 /* Espaço entre a imagem de perfil e os dados */
+    gap: 16px; /* Espaço entre a imagem de perfil e os dados */
   }
 
-   .testimonials .testimonials-container article footer img.img-testiomonials {
-    width: 56px;               /* Tamanho proporcional para telas menores */
+  .testimonials .testimonials-container article footer img.img-testiomonials {
+    width: 56px; /* Tamanho proporcional para telas menores */
     height: 56px;
     border-radius: 50%;
     object-fit: cover;
   }
 
-    .testimonials article footer div.profile-content {
+  .testimonials article footer div.profile-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;   /* Alinha Nome e Estrelas à esquerda em relação à foto */
+    align-items: flex-start; /* Alinha Nome e Estrelas à esquerda em relação à foto */
   }
 
-   .testimonials article footer div.profile-content h4 {
+  .testimonials article footer div.profile-content h4 {
     font-size: 16px;
-    font-weight: 700;          /* Tom de rosa/vermelho usado nos nomes */
-    margin: 0 0 4px 0;         /* Remove margens antigas e adiciona espaço embaixo */
+    font-weight: 700; /* Tom de rosa/vermelho usado nos nomes */
+    margin: 0 0 4px 0; /* Remove margens antigas e adiciona espaço embaixo */
   }
 
   .testimonials article footer div.profile-content div.rating {
@@ -200,14 +193,13 @@
     gap: 2px;
   }
 
-
   .testimonials div.testimonials-container article header p {
-    width: 85%;                /* Limita a largura para que o texto quebre como no Figma */
+    width: 85%; /* Limita a largura para que o texto quebre como no Figma */
     max-width: 480px;
-    font-size: 14px;           /* Fonte menor e legível para leitura */
+    font-size: 14px; /* Fonte menor e legível para leitura */
     line-height: 22px;
-    text-align: center;        /* Centraliza o bloco de texto */
-    color: #4A4A4A;            /* Tom cinza escuro do texto */
+    text-align: center; /* Centraliza o bloco de texto */
+    color: #4a4a4a; /* Tom cinza escuro do texto */
     margin: 0;
   }
 }

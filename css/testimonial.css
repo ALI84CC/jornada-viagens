@@ -59,10 +59,26 @@
 }
 
 .testimonials .testimonials-container article footer img.img-testiomonials {
-  width: 86px;
-  height: 86px;
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* For very small screens make profile pics slightly smaller */
+@media screen and (max-width: 480px) {
+  .testimonials .testimonials-container article footer img.img-testiomonials {
+    width: 48px !important;
+    height: 48px !important;
+    max-width: 48px !important;
+  }
+  .testimonials div.testimonials-container article header p {
+    width: 100%;
+    max-width: 280px;
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {

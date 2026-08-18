@@ -136,3 +136,20 @@ section.hero {
     }
   }
 }
+
+/* Safety: prevent unstyled IMG elements from overflowing their containers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Specific: ensure hero image remains a background and not affected */
+.hero-img img,
+.hero-img {
+  max-width: none;
+}
+
+/* Small safeguard: no accidental visible single-letter placeholders */
+.empty-char { display: none; }
+

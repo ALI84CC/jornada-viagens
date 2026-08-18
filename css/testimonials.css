@@ -47,6 +47,13 @@
   margin: 0 0 8px;
 }
 
+.testimonials article footer img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .testimonials article footer div.profile-content div.rating {
   display: flex; /* Alinha as estrelas em linha perfeitamente */
   gap: 4px;

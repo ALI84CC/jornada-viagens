@@ -1,3 +1,4 @@
+/* --- CONFIGURAÇÃO PADRÃO (MOBILE / TELA 375px) --- */
 .section-title {
   padding-top: 40px;
 }
@@ -6,11 +7,9 @@
   flex-direction: column;
   align-items: center;
 }
-
 .testimonials div.testimonials-container {
   gap: 32px;
 }
-
 .testimonials div.testimonials-container article {
   align-items: center;
   flex-direction: column;
@@ -19,14 +18,12 @@
   gap: 2rem;
   margin: 2rem 0;
 }
-
 .testimonials div.testimonials-container article header p {
   width: 312px;
   height: auto;
   font-size: 16px;
   line-height: 30px;
 }
-
 .testimonials article footer {
   display: flex;
   flex-direction: row;
@@ -39,6 +36,14 @@
   gap: 24px;
 }
 
+/* CLASSE DA IMAGEM ISOLADA E COM ESPECIFICIDADE GARANTIDA */
+.testimonials div.testimonials-container article footer img.img-testiomonials {
+  width: 86px !important;
+  height: 86px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
 .testimonials article footer div.profile-content h4 {
   font-size: 20px;
   line-height: 32px;
@@ -46,32 +51,17 @@
   width: auto;
   margin: 0 0 8px;
 }
-
-.testimonials article footer img {
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .testimonials article footer div.profile-content div.rating {
-  display: flex; /* Alinha as estrelas em linha perfeitamente */
+  display: flex;
   gap: 4px;
 }
-
 .testimonials article footer div.profile-content div.rating span.star {
-  font-size: 32px; /* Aumente ou diminua aqui para chegar no tamanho do Figma */
-  color: #e11d48; /* Use a cor vermelha exata do seu root (--secondary-color ou similar) */
+  font-size: 32px;
+  color: #e11d48;
   line-height: 32px;
 }
 
-.testimonials .testimonials-container article footer img.img-testiomonials {
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
+/* --- MEDIA QUERY: TABLET (768px ou mais) --- */
 @media screen and (min-width: 768px) {
   section.testimonials {
     flex-direction: column;
@@ -80,25 +70,21 @@
     margin: 0 auto;
     padding: 40px 12px;
   }
-
   .section-title {
     text-align: center;
     margin-bottom: 48px;
     font-size: 32px;
   }
-
   .testimonials div.testimonials-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-
   .testimonials div.testimonials-container article {
     gap: 16px;
     margin: 0;
   }
-
   .testimonials div.testimonials-container article header {
     order: 2;
     justify-content: center;
@@ -108,105 +94,103 @@
     max-width: 520px;
     font-size: 16px;
     line-height: 26px;
-    text-align: flex-start;
+    text-align: left;
     margin-left: 0;
   }
   .testimonials article footer {
     max-width: 520px;
     font-size: 16px;
     line-height: 26px;
-    text-align: flex-start;
+    text-align: left;
     margin: 0;
   }
-
   .testimonials .testimonials-container article footer img.img-testiomonials {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    gap: 4px;
+    width: 64px !important;
+    height: 64px !important;
   }
 }
+
+/* --- MEDIA QUERY: DESKTOP (1440px ou mais) --- */
 @media screen and (min-width: 1440px) {
   section.testimonials {
     display: flex;
-    flex-direction: columm;
+    flex-direction: column; /* Corrigido de columm para column */
     width: 100%;
     min-width: 1440px;
     gap: 32px;
     margin: 20px;
   }
-
   .section-title {
     margin-bottom: 10px;
   }
-
   .testimonials div.testimonials-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 1189px;
+    flex-direction: row; /* Alinha os 3 cards lado a lado */
+    justify-content: space-between; /* Espalha os cards igualmente dentro dos 1189px */
+    align-items: flex-start; /* Alinha todos os cards pelo topo */
+    width: 1189px; /* Largura exata do componente no Figma */
+    margin: 0 auto; /* Centraliza o bloco inteiro na tela */
+    gap: 32px;
   }
-
   .testimonials div.testimonials-container article {
-    width: 360px;
-  }
-  .testimonials div.testimonials-container article header {
-    width: 360px;
-    order: 1;
-    box-sizing: content-box;
+    width: 360px; /* Largura proporcional para cada um dos 3 cards */
+    display: flex;
+    flex-direction: column; /* Texto vai para cima e Perfil vai para baixo naturalmente */
+    justify-content: flex-start; /* Empurra o conteúdo para começar do topo */
+    align-items: flex-start; /* Alinha o texto e a foto à esquerda, como no Figma */
+    margin: 0;
+    gap: 16px;
   }
 
+  .testimonials div.testimonials-container article header {
+    order: unset; /* Remove qualquer 'order' antigo */
+    width: 100%;
+  }
   .testimonials div.testimonials-container article header p {
-    width: 286px;
-    font-size: 28px;
-    line-height: 42px;
-    width: 50%;
+    width: 100% !important; /* Ocupa a largura total do card de 360px */
+    font-size: 16px; /* Tamanho de leitura confortável */
+    line-height: 26px;
+    text-align: left; /* Alinhado à esquerda como mostra o Figma */
+    color: #4a4a4a;
+    margin: 0;
   }
 
   .testimonials article footer {
-    order: 1; /* Move o bloco do perfil para o topo */
+    order: unset;
     display: flex;
-    flex-direction: row; /* Mantém foto ao lado do texto/estrelas */
+    flex-direction: row; /* Mantém a foto redonda ao lado do Nome/Estrelas */
     align-items: center;
-    justify-content: center; /* Centraliza o conjunto na tela */
-    width: auto;
-    height: auto;
+    justify-content: flex-start; /* Alinha o conjunto da foto à esquerda */
+    width: 100%;
     padding-top: 0;
-    gap: 16px; /* Espaço entre a imagem de perfil e os dados */
+    margin-top: 0;
+    gap: 16px;
   }
-
   .testimonials .testimonials-container article footer img.img-testiomonials {
-    width: 56px; /* Tamanho proporcional para telas menores */
-    height: 56px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 56px !important;
+    height: 56px !important;
   }
-
   .testimonials article footer div.profile-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha Nome e Estrelas à esquerda em relação à foto */
+    align-items: flex-start;
   }
-
   .testimonials article footer div.profile-content h4 {
     font-size: 16px;
-    font-weight: 700; /* Tom de rosa/vermelho usado nos nomes */
-    margin: 0 0 4px 0; /* Remove margens antigas e adiciona espaço embaixo */
+    font-weight: 700;
+    margin: 0 0 4px 0;
   }
-
   .testimonials article footer div.profile-content div.rating {
     display: flex;
     gap: 2px;
   }
-
   .testimonials div.testimonials-container article header p {
-    width: 85%; /* Limita a largura para que o texto quebre como no Figma */
+    width: 85%;
     max-width: 480px;
-    font-size: 14px; /* Fonte menor e legível para leitura */
+    font-size: 14px;
     line-height: 22px;
-    text-align: center; /* Centraliza o bloco de texto */
-    color: #4a4a4a; /* Tom cinza escuro do texto */
+    text-align: center;
+    color: #4a4a4a;
     margin: 0;
   }
 }

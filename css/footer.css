@@ -5,6 +5,7 @@ footer {
   align-items: center;
 }
 footer div.img-footer img {
+  background: url("/img/imagem-rodape.png") cover;
   width: 360px;
   height: auto;
   margin-left: 0;
@@ -36,4 +37,14 @@ footer .social-media {
   align-items: center;
   gap: 16px;
   padding: 8px 0;
+}
+
+@media screem and (min-width:768px){
+footer div.img-footer img {
+ background: url('img/imagem-rodape-desk.png')  no-repeat center/cover;
+  width: 144px;
+
+
+}
+
 }

@@ -4,14 +4,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
-footer div.img-footer img {
-  background: url("/img/imagem-rodape.png") cover;
-  width: 360px;
+
+footer div.img-footer img{
+  width: 100%;
+  min-width: 375px;
   height: auto;
-  margin-left: 0;
+  align-items:center;
 }
 
-footer .content-footer {
+footer div.content-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,29 +23,132 @@ footer .content-footer {
   margin: 0 auto;
 }
 
-footer .info-footer {
+footer div.content-footer div.info-footer {
   padding: 20px;
   line-height: 2;
   align-items: center;
-}
-
-footer .info-footer P {
   font-size: 16px;
   height: auto;
+  margin: 5px 30px;
 }
 
-footer .social-media {
+footer div.content-footer div  img.texto-footer{
+    align-items: center;
+    margin: 10px 90px;
+    padding: 10px;
+}
+
+footer div.content-footer  p.texto-footer{
+      min-width: 312px;
+    align-items: center;
+    margin: 15px 35px;
+    line-height: 20px;
+}
+
+footer div.content-footer div.content-social{
+  line-height: 15px;
+}
+
+footer div.content-footer div.content-social {
+  font-size:16px;
+}
+
+footer div.content-footer div.content-social{
+    width: 165px;
+    height: 76px;
+    align-items: center;
+}
+footer div.content-footer div.content-social div.social-media {
   align-items: center;
   gap: 16px;
   padding: 8px 0;
+  margin: 0 20px;
 }
 
-@media screem and (min-width:768px){
-footer div.img-footer img {
- background: url('img/imagem-rodape-desk.png')  no-repeat center/cover;
-  width: 144px;
+@media screen and (min-width:768px){
 
+footer div.img-footer img{
+  width: 100%;
+  min-width: 768px;
+  height: auto;
+  align-items:center;
+}
+
+
+footer div.content-footer {
+  align-items:center;
+}
+footer div.content-footer div.info-footer {
+  padding: 20px;
+  line-height: 2;
+  align-items: center;
+  font-size: 16px;
+  height: auto;
+  margin: 5px 30px;
+}
+
+footer div.content-footer div  img.texto-footer{
+  align-items: center;
+  margin: 15px 130px;
+  padding-bottom: 10px;
+}
+
+footer div.content-footer  p.texto-footer{
+      min-width: 312px;
+    align-items: center;
+    margin: 15px 35px;
+    line-height: 20px;
+}
+
+footer div.content-footer div.content-social{
+  line-height: 15px;
+}
+
+footer div.content-footer div.content-social {
+  font-size:16px;
+}
+
+footer div.content-footer div.content-social{
+    width: 165px;
+    height: 76px;
+    align-items: center;
+}
+footer div.content-footer div.content-social div.social-media {
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  margin: 0 20px;
+}
+}
+
+@media screen and (min-width:1440px){
+
+  footer div.img-footer img {
+  content: url('img/imagem-rodape-desk1.png');
+  width:100%;
+  height:auto;
+}
+footer div.content-footer{
+  width:100%;
+  min-width: 1200px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer div.content-footer div.info-footer{
 
 }
 
+footer div.content-footer .content-social p{
+    min-width: 591px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+footer div.content-footer p{
+  padding:10px;
+}
+
+footer div.content-footer div.social-media{
+  gap:8px;
+}
 }
